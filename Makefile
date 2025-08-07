@@ -62,7 +62,7 @@ videos/slide17-24.mp4: frames
 		-start_number 17 \
 		-framerate 1 \
 		-i frames/frame-%02d.png \
-		-f lavfi -t 7 -i anullsrc=channel_layout=stereo:sample_rate=44100 \
+		-f lavfi -t 8 -i anullsrc=channel_layout=stereo:sample_rate=44100 \
 		-c:a aac \
 		-shortest \
 		-c:v hevc_nvenc \
